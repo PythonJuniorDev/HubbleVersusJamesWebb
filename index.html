@@ -1,141 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<title>The Hubble vs James Webb</title>
 
 <style>
+/* Style for the main heading */
 .p1 {
   font-family: "Lucida Console", sans-serif;
   font-size: 40px;
   color: white;
+  text-align: center; /* Center the heading */
 }
 
-</style>
-<style>
+/* General button styles */
 .button {
   border: none;
   color: white;
   padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.5s;
+  margin: 10px;
   cursor: pointer;
+  border-radius: 12px;
+  transition-duration: 0.5s;
 }
 
+/* Button specific colors */
 .button1 {
   background-color: black;
-  color: white;
   border: 2px solid #4CAF50;
-  border-radius: 12px;
 }
 
 .button1:hover {
   background-color: #4CAF50;
-  color: white;
 }
 
 .button2 {
   background-color: black;
-  color: white;
   border: 2px solid #008CBA;
-  border-radius: 12px;
 }
 
 .button2:hover {
   background-color: #008CBA;
-  color: white;
 }
 
 .button3 {
   background-color: black;
-  color: white;
   border: 2px solid darkblue;
-  border-radius: 12px;
 }
 
 .button3:hover {
   background-color: darkblue;
+}
+
+/* Background settings */
+body {
+  background-image: url('https://spaceplace.nasa.gov/galaxy/en/webb-first-deep-field.en.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; /* Center all content */
   color: white;
 }
-
-
 </style>
-  <style>
-body {
-   background-image: url('https://spaceplace.nasa.gov/galaxy/en/webb-first-deep-field.en.jpg');"
-   background-repeat: no-repeat;
-   background-size: 400px 350px;
-}
-</style>
-    <style>
-.center {
-  margin-left: 200;
-  margin-right: 100;
-  margin-top: 10px;
-}
-</style>
-
-
-
-</head>
-
-<body>
-
-<h1 class="p1">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    The Hubble vs James Webb</h1>
 
 <script>
+// Function to change the image when buttons are clicked
 function light(sw) {
   var pic;
   if (sw == 0) {
-    pic = "HubbleVersusJamesWebb.png"
+    pic = "HubbleVersusJamesWebb.png";
   }
   if (sw == 1) {
-    pic = "Comparing_specs.png"
+    pic = "Comparing_specs.png";
   }
   if (sw == 2) {
-    pic = "Partnership.png"
+    pic = "Partnership.png";
   }
   document.getElementById('myImage').src = pic;
 }
 </script>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</head>
 
-<img id="myImage" src="HubbleVersusJamesWebb.png" class="responsive" width="730" height="390">
-<p>
+<body>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-    <button class="button button2" onclick="light(1)">Comparing specs</button>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button class="button button1" onclick="light(0)">The Hubble versus James Webb</button>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button class="button button3" onclick="light(2)">More information</button>
+<!-- Main Title -->
+<h1 class="p1">The Hubble vs James Webb</h1>
 
-</p>
+<!-- Main Image -->
+<img id="myImage" src="HubbleVersusJamesWebb.png" class="responsive" width="730" height="390" style="margin: 20px 0;">
+
+<!-- Buttons to change the image -->
+<div>
+  <button class="button button2" onclick="light(1)">Comparing specs</button>
+  <button class="button button1" onclick="light(0)">The Hubble vs James Webb</button>
+  <button class="button button3" onclick="light(2)">More information</button>
+</div>
 
 </body>
 </html>
