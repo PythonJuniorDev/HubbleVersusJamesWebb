@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
 .p1 {
-  font-family: "Sofia", sans-serif;
-  font-size: 50px;
-  color: yellow;
+  font-family: "Lucida Console", sans-serif;
+  font-size: 40px;
+  color: white;
 }
 
 </style>
@@ -48,37 +47,66 @@
   color: white;
 }
 
+.button3 {
+  background-color: black;
+  color: white;
+  border: 2px solid darkblue;
+  border-radius: 12px;
+}
+
+.button3:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+
 </style>
   <style>
 body {
-   background-image: url('https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2021/06/comparing_webb_and_hubble/23314247-1-eng-GB/Comparing_Webb_and_Hubble_pillars.jpg');"
+   background-image: url('https://spaceplace.nasa.gov/galaxy/en/webb-first-deep-field.en.jpg');"
    background-repeat: no-repeat;
-   background-size: 675px 440px;
+   background-size: 400px 350px;
 }
 </style>
+    <style>
+.center {
+  margin-left: 200;
+  margin-right: 100;
+  margin-top: 10px;
+}
+</style>
+
+
 </head>
 
 <body>
 
-
 <h1 class="p1">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    The Hubble versus James Webb</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    The Hubble vs James Webb</h1>
 
 <script>
 function light(sw) {
   var pic;
   if (sw == 0) {
-    pic = "Hubble.png"
-  } else {
-    pic = "JamesWebb.png"
+    pic = "HubbleVersusJamesWebb.png"
+  }
+  if (sw == 1) {
+    pic = "Comparing_specs.png"
+  }
+  if (sw == 2) {
+    pic = "Partnership.png"
   }
   document.getElementById('myImage').src = pic;
 }
 </script>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -87,8 +115,10 @@ function light(sw) {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img id="myImage" src="Hubble.png" width="500" height="500">
+
+<img id="myImage" src="HubbleVersusJamesWebb.png" width="730" height="390">
 <p>
+
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -96,13 +126,12 @@ function light(sw) {
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button class="button button1" onclick="light(0)">The Hubble</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button class="button button2" onclick="light(1)">James Webb</button>
+            &nbsp;&nbsp;&nbsp;
+    <button class="button button2" onclick="light(1)">Comparing specs</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="button button1" onclick="light(0)">The Hubble versus James Webb</button>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="button button3" onclick="light(2)">More information</button>
 
 </p>
 
